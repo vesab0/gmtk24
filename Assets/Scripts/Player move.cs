@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Playermove : MonoBehaviour
 {
-
-private bool _isMoving;
+    public CM CM;
+    public CD CD;
+    private bool _isMoving;
    public Rigidbody2D rotatingCubeRigidbody;
    public float rollSpeed = 5;
+   void Start(){
+    {Debug.Log("you have 1 parent");}}
+    
     void Update()
 {
     if (_isMoving) return;
-    if(Input.GetKey(KeyCode.A)) Assemble(Vector3.left);
-    if(Input.GetKey(KeyCode.D)) Assemble(Vector3.right);
+    if (transform.parent != null){}
+    if(Input.GetKey(KeyCode.A) && (CM.TouchingWall == false)) Assemble(Vector3.left);
+    if(Input.GetKey(KeyCode.D) && (CD.TouchingWall == false)) Assemble(Vector3.right);
+    
+    
     
     void Assemble(Vector3 dir)
     {
