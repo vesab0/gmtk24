@@ -8,14 +8,14 @@ public class CM : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "platform")
+        if(other.gameObject.tag == "platform" || other.gameObject.tag== "Player")
         {
             TouchingWall = true;
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        if(other.gameObject.tag == "platform")
+        if(other.gameObject.tag == "platform"|| other.gameObject.tag== "Player")
         {
             TouchingWall = false;
         }

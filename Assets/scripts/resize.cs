@@ -5,7 +5,7 @@ using UnityEngine;
 public class Resize : MonoBehaviour
 {
     public creatercontroller creatercontroller;
-    public move move; 
+    public Playermove Playermove; 
     public GameObject katrori;
     public bool canResize = false;
     public bool isOnButton = false;
@@ -28,16 +28,16 @@ public class Resize : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         if (Input.GetKey(KeyCode.Space))
         {
             canResize = true;
-            move.moveSpeed = 0f;
+            Playermove.rollSpeed = 0f;
         }
         if (Input.GetKeyUp(KeyCode.Space))
         {
             canResize = false;
-            move.moveSpeed = 20f;
+            Playermove.rollSpeed = 6f;
         }
 
         if (isOnButton && canResize)

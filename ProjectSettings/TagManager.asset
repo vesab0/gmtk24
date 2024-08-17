@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - platform
+=======
+>>>>>>> 3f4e99a20f6b7b491cdeeeeb00131695ebacf1f3
   - button
   layers:
   - Default
