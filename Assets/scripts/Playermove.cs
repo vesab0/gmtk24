@@ -1,39 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Playermove : MonoBehaviour
 {
     public CM CM;
     public CD CD;
+
+    public CP CP;
+
+    public GameObject Tag2;
     private bool _isMoving;
    public Rigidbody2D rotatingCubeRigidbody;
    public float rollSpeed = 5;
-   void Start(){
-    {Debug.Log("you have 1 parent");}}
-    
+
     void Update()
 {
 
-    
     if (_isMoving) return;
-    if (transform.parent != null){}
     if(Input.GetKey(KeyCode.A)){
-        if(CM.TouchingWall){
+        if(CM.TouchingWall)
+        {
+            Instantiate(Tag2, transform.position, Quaternion.identity);
             GameObject parentObject = GameObject.FindGameObjectWithTag("bossi");
             transform.SetParent(parentObject.transform);
             gameObject.tag="Player";
         }
-        else{Assemble(Vector3.left);gameObject.tag="bossi";}
+        if(CP.TouchingG){Assemble(Vector3.left);gameObject.tag="bossi";}
     } 
 
     if(Input.GetKey(KeyCode.D)){
-        if(CD.TouchingWall){
+        if(CD.TouchingWall)
+        {
+            Instantiate(Tag2, transform.position, Quaternion.identity);
             GameObject parentObject = GameObject.FindGameObjectWithTag("bossi");
             transform.SetParent(parentObject.transform);
             gameObject.tag="Player";
         }
-        else{Assemble(Vector3.right);gameObject.tag="bossi";}
+        if(CP.TouchingG){Assemble(Vector3.right);gameObject.tag="bossi";}
     } 
     
     
