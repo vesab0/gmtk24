@@ -17,6 +17,7 @@ public class Resize : MonoBehaviour
     public static int lastPlaceNalt = 0;
     void Start()
     {
+        gameObject.tag="Player";
         if (creatercontroller.direction == 1)
         {
             myID = lastPlaceDjatht;
