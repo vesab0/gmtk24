@@ -5,16 +5,16 @@ using UnityEngine;
 public class cm : MonoBehaviour
 {
     public bool TouchingWall;
+    public bool TouchingGuy;
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "platform")
         {
             TouchingWall = true;
-            
-            if(other.gameObject.tag =="cantMove"){
-                Debug.Log("e preka cantmovin");
-            }
+        }
+        else if(other.gameObject.tag == "Player"){
+            TouchingGuy = false;
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -23,6 +23,9 @@ public class cm : MonoBehaviour
         {
             TouchingWall = false;
 
+        }
+        else if(other.gameObject.tag == "Player"){
+            TouchingGuy = false;
         }
     }
 }

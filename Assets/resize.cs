@@ -10,20 +10,27 @@ public class Resize : MonoBehaviour
     public cm cm;
     public cd cd;
     //public cn cn;
-
+    string prefabName;
 
     public GameObject qeliza;
     public static bool canResize = false;
-    public bool isOnButton = false;
+    public butonpresed butonpresed;
 
     private int myID = 0;
     private int lastPlaceDjatht=0;
     private int lastPlaceMajt=0;
+     public float overlapRadius = 0.5f;
     
     void Start()
     {
-        isOnButton = false;
-        gameObject.tag="Player";
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, overlapRadius);
+
+        if (colliders.Length > 1)
+        {
+            Destroy(gameObject);
+        }
+
+        butonpresed.isOnButton = false;
         if (creatercontroller.direction == 1)
         {
             myID = lastPlaceDjatht;
@@ -33,9 +40,9 @@ public class Resize : MonoBehaviour
             myID = lastPlaceMajt;   
         }
     }
-
     void Update()
     {   
+
         if (Input.GetKey(KeyCode.Space))
         {
             canResize = true;
@@ -47,27 +54,32 @@ public class Resize : MonoBehaviour
             move.cellSize = 1f;
         }
 
-        if (isOnButton && canResize)
+        if (butonpresed.isOnButton && canResize)
         {
             Vector3 myPosition = transform.position;
 
-            if (Input.GetKeyDown(KeyCode.A))
+            if (!cm.TouchingWall && !cm.TouchingGuy)
             {
-                if (!cm.TouchingWall)
+                if (Input.GetKeyDown(KeyCode.A))
                 {
+                
                     Vector3 newPosition = myPosition + new Vector3(-1, 0, 0);
-                    Instantiate(qeliza, newPosition, Quaternion.identity);
+
+                    Instantiate(qeliza, newPosition, Quaternion.identity);  
+
                     lastPlaceMajt--;
                     creatercontroller.GetComponent<creatercontroller>().createdleft();
                 }
             }
-
-            if (Input.GetKeyDown(KeyCode.D))
+            if (!cd.TouchingWall && !cd.TouchingGuy)
             {
-                if (!cd.TouchingWall)
+                if (Input.GetKeyDown(KeyCode.D))
                 {
                     Vector3 newPosition = myPosition + new Vector3(1, 0, 0);
-                    Instantiate(qeliza, newPosition, Quaternion.identity);
+
+                    Instantiate(qeliza, newPosition, Quaternion.identity);  
+                    
+
                     lastPlaceDjatht++;
                     creatercontroller.GetComponent<creatercontroller>().createdright();
                 }
@@ -76,19 +88,5 @@ public class Resize : MonoBehaviour
         }
     }
 //come down come down come down
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("button"))
-        {
-            isOnButton = true;
-        }
-    }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("button"))
-        {
-            isOnButton = false;
-        }
-    }
 }
