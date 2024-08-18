@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 269445039813563065}
   m_Layer: 0
   m_Name: Left wall check
-  m_TagString: Untagged
+  m_TagString: help
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TouchingWall: 0
+  TouchingPlayer: 0
 --- !u!114 &269445039813563065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,10 +116,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3694424966766208350}
   - component: {fileID: 5039932765135394890}
-  - component: {fileID: 3981072498462693940}
   - component: {fileID: 8163959287402880732}
   - component: {fileID: 7922055032419929892}
   - component: {fileID: 5912429513874677618}
+  - component: {fileID: 8978745563940686314}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Player
@@ -196,33 +197,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3981072498462693940
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3090552600782978647}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &8163959287402880732
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -283,10 +257,12 @@ MonoBehaviour:
   CM: {fileID: 1479342275149221301}
   CD: {fileID: 6510987161356986156}
   CP: {fileID: 6160502028948781628}
-  Tag2: {fileID: 6993158317947312661}
-  rotatingCubeRigidbody: {fileID: 3981072498462693940}
+  BSM: {fileID: 0}
+  BSD: {fileID: 0}
+  parentTransform: {fileID: 3694424966766208350}
+  gridSize: 1
   rollSpeed: 6
-  Ecje: 0
+  tagToExclude: help
 --- !u!114 &5912429513874677618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +280,33 @@ MonoBehaviour:
   katrori: {fileID: 3090552600782978647}
   canResize: 0
   isOnButton: 0
+--- !u!50 &8978745563940686314
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090552600782978647}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3299683652013636414
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +321,7 @@ GameObject:
   - component: {fileID: 4121195146676331416}
   m_Layer: 0
   m_Name: Right wall check
-  m_TagString: Untagged
+  m_TagString: help
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,6 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TouchingWall: 0
+  TouchingPlayer: 0
 --- !u!114 &4121195146676331416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,7 +427,7 @@ GameObject:
   - component: {fileID: 6160502028948781628}
   m_Layer: 0
   m_Name: Down wall check
-  m_TagString: FakeGround
+  m_TagString: help
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

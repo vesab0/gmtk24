@@ -8,14 +8,17 @@ TagManager:
   - button
   - bossi
   - FakeGround
+  - potencialbossiD
+  - potencialbossiM
+  - help
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - wall
   - Water
   - UI
-  - 
+  - ground
   - 
   - 
   - 
