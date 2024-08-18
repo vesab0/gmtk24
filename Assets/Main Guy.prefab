@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7224233651967371076}
   - component: {fileID: 704927321607100986}
   - component: {fileID: 9155205250102965255}
+  - component: {fileID: 4437158680134668437}
   m_Layer: 0
   m_Name: cn
   m_TagString: playercollidedetector
@@ -105,6 +106,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4437158680134668437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477537971187673755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0d42c0ea939364887c1b3e9fb771b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TouchingWall: 0
+  TouchingGuy: 0
 --- !u!1 &1556048208839459664
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,6 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TouchingWall: 0
+  TouchingGuy: 0
 --- !u!50 &6596551474195086194
 Rigidbody2D:
   serializedVersion: 4
@@ -421,6 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TouchingWall: 0
+  TouchingGuy: 0
 --- !u!50 &6371166732387812365
 Rigidbody2D:
   serializedVersion: 4
@@ -625,7 +642,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69765b14be5d3c48880a73254140b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
   cellSize: 1
   cd: {fileID: 2701122847170156275}
   cm: {fileID: 5092590306682595758}
@@ -646,9 +662,10 @@ MonoBehaviour:
   move: {fileID: 7324614829950566469}
   cm: {fileID: 5092590306682595758}
   cd: {fileID: 2701122847170156275}
+  cn: {fileID: 4437158680134668437}
   qeliza: {fileID: 8011018919416764494}
-  canResize: 0
-  isOnButton: 0
+  butonpresed: {fileID: 0}
+  overlapRadius: 0.1
 --- !u!1 &8106694207412529692
 GameObject:
   m_ObjectHideFlags: 0

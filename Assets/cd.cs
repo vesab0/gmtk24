@@ -14,7 +14,7 @@ public class cd : MonoBehaviour
             TouchingWall = true;
         }
         else if(other.gameObject.tag == "Player"){
-            TouchingGuy = false;
+            TouchingGuy = true;
         }
     }
     void OnTriggerExit2D(Collider2D other)

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cm : MonoBehaviour
+public class cn : MonoBehaviour
 {
     public bool TouchingWall;
     public bool TouchingGuy;

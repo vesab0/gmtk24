@@ -9,7 +9,7 @@ public class Resize : MonoBehaviour
 
     public cm cm;
     public cd cd;
-    //public cn cn;
+    public cn cn;
     string prefabName;
 
     public GameObject qeliza;
@@ -19,7 +19,7 @@ public class Resize : MonoBehaviour
     private int myID = 0;
     private int lastPlaceDjatht=0;
     private int lastPlaceMajt=0;
-     public float overlapRadius = 0.5f;
+     public float overlapRadius = 0.1f;
     
     void Start()
     {
@@ -84,7 +84,18 @@ public class Resize : MonoBehaviour
                     creatercontroller.GetComponent<creatercontroller>().createdright();
                 }
             }
-            
+            if (!cn.TouchingWall && !cn.TouchingGuy)
+            {
+                if (Input.GetKeyDown(KeyCode.W))
+                {
+                    Vector3 newPosition = myPosition + new Vector3(0, 1, 0);
+
+                    Instantiate(qeliza, newPosition, Quaternion.identity);  
+
+                    lastPlaceDjatht++;
+                    creatercontroller.GetComponent<creatercontroller>().createdright();
+                }
+            }
         }
     }
 //come down come down come down
