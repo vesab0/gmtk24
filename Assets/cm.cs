@@ -6,16 +6,19 @@ public class cm : MonoBehaviour
 {
     public bool TouchingWall;
     public GameObject katrori;
-    private bool hasInstantiatedPrefab;
+    public GameObject qeliza;
+    public bool hasInstantiatedPrefab;
+    private GameObject instantiatedKatrori;
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "platform" || other.gameObject.tag== "cantMove")
+        if(other.gameObject.tag == "platform")
         {
             TouchingWall = true;
             if (!hasInstantiatedPrefab)
             {
-                Instantiate(katrori, transform.position, Quaternion.identity);
+                instantiatedKatrori = Instantiate(katrori, qeliza.transform.position, Quaternion.identity);
+                instantiatedKatrori.transform.SetParent(qeliza.transform);
                 hasInstantiatedPrefab = true; // Mark it as instantiated
             }
             if(other.gameObject.tag =="cantMove"){
