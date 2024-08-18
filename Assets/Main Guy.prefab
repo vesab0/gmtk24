@@ -302,9 +302,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TouchingWall: 0
-  katrori: {fileID: 2795610097754004392, guid: d532f272803526b4892b5059fd4d4e3b, type: 3}
-  qeliza: {fileID: 8011018919416764494}
-  cm: {fileID: 5092590306682595758}
 --- !u!50 &6596551474195086194
 Rigidbody2D:
   serializedVersion: 4
@@ -424,8 +421,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TouchingWall: 0
-  katrori: {fileID: 2795610097754004392, guid: d532f272803526b4892b5059fd4d4e3b, type: 3}
-  qeliza: {fileID: 8011018919416764494}
 --- !u!50 &6371166732387812365
 Rigidbody2D:
   serializedVersion: 4
@@ -466,6 +461,7 @@ GameObject:
   - component: {fileID: 4228675120074787089}
   - component: {fileID: 5391505761210032358}
   - component: {fileID: 7324614829950566469}
+  - component: {fileID: 2103842036480417375}
   m_Layer: 6
   m_Name: Main Guy
   m_TagString: Player
@@ -634,6 +630,25 @@ MonoBehaviour:
   cd: {fileID: 2701122847170156275}
   cm: {fileID: 5092590306682595758}
   canmovetag: 0
+--- !u!114 &2103842036480417375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011018919416764494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf78b004e81beba4aaa174ba318aa66d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatercontroller: {fileID: 0}
+  move: {fileID: 7324614829950566469}
+  cm: {fileID: 5092590306682595758}
+  cd: {fileID: 2701122847170156275}
+  qeliza: {fileID: 8011018919416764494}
+  canResize: 0
+  isOnButton: 0
 --- !u!1 &8106694207412529692
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +660,7 @@ GameObject:
   - component: {fileID: 4692193494698335533}
   - component: {fileID: 3321530818207414739}
   - component: {fileID: 715325002985491925}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: koka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -734,7 +749,7 @@ Rigidbody2D:
     m_Bits: 64
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0

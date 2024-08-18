@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
-    public float moveSpeed = 20f;
+
     public float cellSize = 1f;
     public cd cd;
     public cm cm;
@@ -27,13 +27,13 @@ public class move : MonoBehaviour
                 
             if(Input.GetKeyDown(KeyCode.A))
             {
-                transform.position = transform.position + new Vector3(-1,0,0);
+                transform.position = transform.position + new Vector3(-cellSize,0,0);
             }
         }
         if(cd.TouchingWall == false){
             if(Input.GetKeyDown(KeyCode.D))
             {
-                transform.position = transform.position + new Vector3(1,0,0);
+                transform.position = transform.position + new Vector3(cellSize,0,0);
             }
         }  
 
