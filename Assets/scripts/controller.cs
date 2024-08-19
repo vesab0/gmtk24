@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class creatercontroller : MonoBehaviour
+public class controller : MonoBehaviour
 {
     public int direction = 0;
     // Start is called before the first frame update

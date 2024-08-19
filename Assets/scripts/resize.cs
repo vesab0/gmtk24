@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Resize : MonoBehaviour
 {
-    public creatercontroller creatercontroller;
+    public controller controller;
     public move move; 
 
     public cm cm;
@@ -19,7 +19,7 @@ public class Resize : MonoBehaviour
     private int myID = 0;
     private int lastPlaceDjatht=0;
     private int lastPlaceMajt=0;
-     public float overlapRadius = 0.1f;
+    public float overlapRadius = 0.1f;
     
     void Start()
     {
@@ -31,11 +31,11 @@ public class Resize : MonoBehaviour
         }
 
         butonpresed.isOnButton = false;
-        if (creatercontroller.direction == 1)
+        if (controller.direction == 1)
         {
             myID = lastPlaceDjatht;
         }
-        else if (creatercontroller.direction == -1)
+        else if (controller.direction == -1)
         {
             myID = lastPlaceMajt;   
         }
@@ -68,7 +68,7 @@ public class Resize : MonoBehaviour
                     Instantiate(qeliza, newPosition, Quaternion.identity);  
 
                     lastPlaceMajt--;
-                    creatercontroller.GetComponent<creatercontroller>().createdleft();
+                    controller.GetComponent<controller>().createdleft();
                 }
             }
             if (!cd.TouchingWall && !cd.TouchingGuy)
@@ -79,9 +79,8 @@ public class Resize : MonoBehaviour
 
                     Instantiate(qeliza, newPosition, Quaternion.identity);  
                     
-
                     lastPlaceDjatht++;
-                    creatercontroller.GetComponent<creatercontroller>().createdright();
+                    controller.GetComponent<controller>().createdright();
                 }
             }
             if (!cn.TouchingWall && !cn.TouchingGuy)
@@ -93,7 +92,7 @@ public class Resize : MonoBehaviour
                     Instantiate(qeliza, newPosition, Quaternion.identity);  
 
                     lastPlaceDjatht++;
-                    creatercontroller.GetComponent<creatercontroller>().createdright();
+                    controller.GetComponent<controller>().createdright();
                 }
             }
         }
