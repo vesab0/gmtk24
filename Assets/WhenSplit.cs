@@ -7,9 +7,20 @@ public class WhenSplit : MonoBehaviour
     private GameObject playerWithHighestXAtSmallestY;
     private GameObject playerWithLowestXAtHighestY;
     private float lastDistance = -1f;
+    private bool resizingActive;
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            risizingActive = true;
+            
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            risizingActive = false;
+            
+        }
         // Find all objects with the "Player" tag
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 
