@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 0.001
+  spritePixelsToUnits: 28
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +95,595 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b26144072dc4649af95fbccc0a669b
+      internalID: 2108150428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cfe7bdb887a0446b56948b01c82ca6
+      internalID: -1571977438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218dd425c3600444d8a9b8d5221507f7
+      internalID: -611885163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bff8ce74b1a5d54695fb4eb59a9f29e
+      internalID: 446937617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74beb4a380cd2446884bd785d449aa2
+      internalID: 998324177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1cc6e60064c344e92f4fc8cc46f691
+      internalID: -71231587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2d56e8b5d4fd740a8f7ab4b4461be1
+      internalID: 1729161387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0969f7daaad00254d9317c02b3bd24a2
+      internalID: -1946209320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfb31212cd0bad47989066ab3f9f773
+      internalID: 1848374502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 4590
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efd8fdd59419014eb5be6ddff5c1087
+      internalID: 70905271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a1451c3a7c99a479cd592d0c725f11
+      internalID: -431432994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 5610
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad43c963d4b0ef4abe793a54fd09186
+      internalID: 696997657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105cc5e1d5450af40b8e9f51814889a2
+      internalID: -1315840584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 6630
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f870053cc6df54d89e1875074c81a0
+      internalID: -983800031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 7140
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0862eb4f7fad9c04f87b5db9905a08c4
+      internalID: 842042941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 7650
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec44a00681c2061478880d36f86db367
+      internalID: 272899538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 8160
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e89e9476056441409297d7d6a382c38
+      internalID: -1232696300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 8670
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf96f9f2591c41c41acb41fed5ca3ed7
+      internalID: 1442181641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 9180
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332b7997b48d9864abb35f9b4961e8c4
+      internalID: -180267894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 9690
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcd03cd9f4454b4ba4b600878035336
+      internalID: -636149389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 10200
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec638afe25769840b0f9a46ca928d02
+      internalID: 1896897790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 10710
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34be031568f94d4448242604dc177d93
+      internalID: 855879576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 11220
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dab623df97281441a657e217d4537a8
+      internalID: 287167403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 11730
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8e99660fec741408d45c458d3e8d65
+      internalID: 1800852320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 12240
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a784023b8d579034783cbbbeab491c8d
+      internalID: -615033573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 12750
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c9953872b6c6b46aedbe041dfc133b
+      internalID: 1055001547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 13260
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa796e3f14eabab47a79545e3bb04778
+      internalID: -480732013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world1selectorBG-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 13770
+        y: 0
+        width: 510
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68099c54218a16145aa6dbe35d2b0532
+      internalID: -2060508000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +694,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      world1selectorBG-Sheet_0: 2108150428
+      world1selectorBG-Sheet_1: -1571977438
+      world1selectorBG-Sheet_10: -431432994
+      world1selectorBG-Sheet_11: 696997657
+      world1selectorBG-Sheet_12: -1315840584
+      world1selectorBG-Sheet_13: -983800031
+      world1selectorBG-Sheet_14: 842042941
+      world1selectorBG-Sheet_15: 272899538
+      world1selectorBG-Sheet_16: -1232696300
+      world1selectorBG-Sheet_17: 1442181641
+      world1selectorBG-Sheet_18: -180267894
+      world1selectorBG-Sheet_19: -636149389
+      world1selectorBG-Sheet_2: -611885163
+      world1selectorBG-Sheet_20: 1896897790
+      world1selectorBG-Sheet_21: 855879576
+      world1selectorBG-Sheet_22: 287167403
+      world1selectorBG-Sheet_23: 1800852320
+      world1selectorBG-Sheet_24: -615033573
+      world1selectorBG-Sheet_25: 1055001547
+      world1selectorBG-Sheet_26: -480732013
+      world1selectorBG-Sheet_27: -2060508000
+      world1selectorBG-Sheet_3: 446937617
+      world1selectorBG-Sheet_4: 998324177
+      world1selectorBG-Sheet_5: -71231587
+      world1selectorBG-Sheet_6: 1729161387
+      world1selectorBG-Sheet_7: -1946209320
+      world1selectorBG-Sheet_8: 1848374502
+      world1selectorBG-Sheet_9: 70905271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
