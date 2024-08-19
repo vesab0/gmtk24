@@ -6,6 +6,10 @@ public class cm : MonoBehaviour
 {
     public bool TouchingWall;
     public bool TouchingGuy;
+    void Start(){
+        TouchingGuy = false;
+        TouchingWall = false;
+    }
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {

@@ -658,12 +658,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf78b004e81beba4aaa174ba318aa66d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creatercontroller: {fileID: 699466178062640183, guid: 401eb6c2f6d04a1448187bcd97e53321, type: 3}
+  controller: {fileID: 0}
   move: {fileID: 7324614829950566469}
   cm: {fileID: 5092590306682595758}
   cd: {fileID: 2701122847170156275}
   cn: {fileID: 4437158680134668437}
   qeliza: {fileID: 8011018919416764494}
+  outline: {fileID: 6725386809761700608, guid: e270d95e32d2e2446b778546f64b18ed, type: 3}
   butonpresed: {fileID: 1258550879984465431, guid: f4e750f3b1993424ea0b4ec8ae877340, type: 3}
   overlapRadius: 0.1
 --- !u!1 &8106694207412529692
