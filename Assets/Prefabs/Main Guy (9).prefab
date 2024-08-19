@@ -495,7 +495,7 @@ Transform:
   m_GameObject: {fileID: 8011018919416764494}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5, y: -1.5, z: 0}
+  m_LocalPosition: {x: -3.5, y: -1.5, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -645,7 +645,10 @@ MonoBehaviour:
   cellSize: 1
   cd: {fileID: 2701122847170156275}
   cm: {fileID: 5092590306682595758}
-  canmovetag: 0
+  cantMove_D: 0
+  cantMove_M: 0
+  CantMoveOfOther_D: 0
+  CantMoveOfOther_M: 0
 --- !u!114 &2103842036480417375
 MonoBehaviour:
   m_ObjectHideFlags: 0
