@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 214413117}
   - component: {fileID: 214413113}
   - component: {fileID: 214413116}
+  - component: {fileID: 214413118}
   m_Layer: 0
   m_Name: Pressure Plate
   m_TagString: button
@@ -228,7 +229,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 991040164}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &214413116
 BoxCollider2D:
@@ -288,6 +289,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sensor: {fileID: 214413116}
+--- !u!114 &214413118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214413112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df8d889026c50c42a8726fc5b993d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnButton: 0
 --- !u!1 &227271928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1496,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 595928679}
-  - {fileID: 214413115}
   - {fileID: 426835850}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1535,65 +1548,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2103842036480417375, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: creatercontroller
+      propertyPath: outline
       value: 
-      objectReference: {fileID: 517372762}
-    - target: {fileID: 8011018919416764494, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_Name
-      value: Main Guy (9)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
---- !u!1001 &1951715011
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      objectReference: {fileID: 6725386809761700608, guid: 9f671cc6b4c1ede45b3c07c29977c0b2, type: 3}
+    - target: {fileID: 2103842036480417375, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
+      propertyPath: butonpresed
+      value: 
+      objectReference: {fileID: 214413118}
+    - target: {fileID: 2103842036480417375, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
+      propertyPath: outlinePrefab
+      value: 
+      objectReference: {fileID: 6725386809761700608, guid: 9f671cc6b4c1ede45b3c07c29977c0b2, type: 3}
+    - target: {fileID: 2103842036480417375, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
+      propertyPath: outlinescripts
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2103842036480417375, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
       propertyPath: creatercontroller
@@ -1601,7 +1569,7 @@ PrefabInstance:
       objectReference: {fileID: 517372762}
     - target: {fileID: 8011018919416764494, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
       propertyPath: m_Name
-      value: Main Guy (10)
+      value: Main Guy (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1615,5 +1583,5 @@ SceneRoots:
   - {fileID: 227271931}
   - {fileID: 991040164}
   - {fileID: 1930796788}
-  - {fileID: 1951715011}
   - {fileID: 517372763}
+  - {fileID: 214413115}
