@@ -16,6 +16,7 @@ public class move : MonoBehaviour
     private bool kivenfrL;
     private bool kivenfrD;
     public bool cantMove;
+    public bool touchwall;
     
 
     // Start is called before the first frame update
@@ -31,25 +32,31 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 movement = Vector2.zero;
-        Collider2D colliderD = Physics2D.OverlapPoint(potentialD);
         
+        touchwall = cm.TouchingWall||cd.TouchingWall;
+
+        Vector2 movement = Vector2.zero;
+
+        Collider2D colliderD = Physics2D.OverlapPoint(potentialD);
         Collider2D colliderL = Physics2D.OverlapPoint(potentialL);
 
-        
         if(colliderL != null){
             if (colliderL.CompareTag("Player")){
-                if (cm.CantMoveOfOther == true){
+                move mover = colliderL.GetComponent<move>();
+                if (mover.touchwall){
                     kivenfrL = false;
+                    touchwall = true;
                 }
                 else{
                     kivenfrL = true;
+                    
                 }
             }
         }
         if(colliderD != null){
             if (colliderD.CompareTag("Player")){
-                if (!cd.CantMoveOfOther){
+                move mover = colliderD.GetComponent<move>();
+                if (mover.touchwall){
                     kivenfrD = true;
                 }
                 else{
@@ -57,13 +64,6 @@ public class move : MonoBehaviour
                 }
             }  
         }
-                
-
-        if(cm.TouchingWall||cd.TouchingWall)
-        {
-            cantMove = true;
-        }
-        else{cantMove = false;}
 
         if(cm.TouchingWall == false && kivenfrL == true){
                     
@@ -72,7 +72,7 @@ public class move : MonoBehaviour
                 transform.position = transform.position + new Vector3(-cellSize,0,0);
 
                 potentialL = transform.position + new Vector3(-cellSize, 0, 0);
-                potentialD = transform.position + new Vector3(cellSize, 0, 0);
+
             }
         }
         
@@ -81,7 +81,6 @@ public class move : MonoBehaviour
             {
                 transform.position = transform.position + new Vector3(cellSize,0,0);
 
-                potentialL = transform.position + new Vector3(-cellSize, 0, 0);
                 potentialD = transform.position + new Vector3(cellSize, 0, 0);
             }
         }  

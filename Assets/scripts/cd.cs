@@ -6,13 +6,9 @@ public class cd : MonoBehaviour
 {
     public bool TouchingWall;
     public bool TouchingGuy;
-    public bool CantMoveOfOther;
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D collision)
     {
-        move otherScript = collision.GetComponent<move>();
-        Debug.Log(otherScript);
-
         if(collision.gameObject.tag == "platform")
         {
             TouchingWall = true;
@@ -21,10 +17,6 @@ public class cd : MonoBehaviour
             TouchingGuy = true;
         }
         
-        if (otherScript != null)
-        {
-            CantMoveOfOther = otherScript.cantMove;
-        }
     }
     void OnTriggerExit2D(Collider2D other)
     {

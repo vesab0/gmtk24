@@ -48,15 +48,13 @@ public class Resize : MonoBehaviour
     void FixedUpdate(){
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.gravityScale = 0f;
-            rb.velocity = Vector2.zero;
+            
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
             
         }
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            move.cellSize = 1f;
-            rb.gravityScale = 1f;
+               
             rb.constraints = RigidbodyConstraints2D.None;
             
         }

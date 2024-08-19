@@ -1509,7 +1509,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 5126523935572881, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1567,6 +1567,26 @@ PrefabInstance:
       propertyPath: creatercontroller
       value: 
       objectReference: {fileID: 517372762}
+    - target: {fileID: 3512876539013091804, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
+      propertyPath: m_TagString
+      value: playercollidedetector
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228675120074787089, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171213736990155688, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297138190916028440, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915271710394597197, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
+      propertyPath: m_TagString
+      value: playercollidedetector
+      objectReference: {fileID: 0}
     - target: {fileID: 8011018919416764494, guid: 75cb91651ae3eab4fb3eafe6188d09ea, type: 3}
       propertyPath: m_Name
       value: Main Guy (9)
