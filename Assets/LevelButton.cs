@@ -27,9 +27,9 @@ public class LevelMenuScript : MonoBehaviour
 }
 
 
-//per me u unlock nivelet tjera te finish point script a najsen duhet me add:
-//1. Unity.Scenemanager
-//void UnlockNewLevel(){ 
+// //per me u unlock nivelet tjera te finish point script a najsen duhet me add:
+// //1. Unity.Scenemanager
+// public void UnlockNewLevel(){ 
 //     if(SceneManager.GetActiveScene().buildIndex >=PlayerPrefs.GetInt("ReachedIndex")){
 //         PlayerPrefs.SetInt("ReachedIndex",SceneManager.GetActiveScene().buildIndex +1);
 //         PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1)+ 1);
