@@ -480,7 +480,7 @@ GameObject:
   - component: {fileID: 7324614829950566469}
   - component: {fileID: 2103842036480417375}
   m_Layer: 6
-  m_Name: Main Guy (9)
+  m_Name: MainGuy
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -617,7 +617,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.00024157763}
+  m_Offset: {x: 0, y: -0.04506719}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -628,7 +628,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9407015, y: 0.8176464}
+  m_Size: {x: 0.9407015, y: 0.9072976}
   m_EdgeRadius: 0
 --- !u!114 &7324614829950566469
 MonoBehaviour:
@@ -680,7 +680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4692193494698335533}
   - component: {fileID: 3321530818207414739}
-  - component: {fileID: 715325002985491925}
+  - component: {fileID: 5134913503935906823}
   m_Layer: 1
   m_Name: koka
   m_TagString: Untagged
@@ -735,7 +735,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0012354851, y: 0.41066357}
+  m_Offset: {x: -0.0012354851, y: 0.4421398}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -746,9 +746,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.873991, y: 0.1972112}
+  m_Size: {x: 0.873991, y: 0.064095855}
   m_EdgeRadius: 0
---- !u!50 &715325002985491925
+--- !u!50 &5134913503935906823
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -756,22 +756,22 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8106694207412529692}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 6
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0

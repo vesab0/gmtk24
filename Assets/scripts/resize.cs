@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Resize : MonoBehaviour
+public class resize : MonoBehaviour
 {
     public controller controller;
     public move move; 
@@ -15,9 +15,6 @@ public class Resize : MonoBehaviour
     public GameObject qeliza;
     public GameObject outline;
     public static bool canResize = false;
-    public butonpresed butonpresed;
-    public butonpresed butonpresed;
-    public butonpresed butonpresed;
     public butonpresed butonpresed;
 
     private int myID = 0;
@@ -67,6 +64,7 @@ public class Resize : MonoBehaviour
 
     void Update()
     {   
+
         if(gameObject.CompareTag("Player")){
 
         if (Input.GetKey(KeyCode.Space))
