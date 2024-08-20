@@ -17,6 +17,7 @@ public class move : MonoBehaviour
     public bool CantMoveOfOther_M;
     private bool risizingActive;
     private bool risizngRelease = false;
+    private int direction = 0;
     
     void Update()
     {      
@@ -38,6 +39,12 @@ public class move : MonoBehaviour
             CantMoveOfOther_M = false;
             
         }  
+        if(Input.GetKey(KeyCode.D)){
+            direction = 1;
+        }
+        if(Input.GetKey(KeyCode.A)){
+            direction = -1;
+        }
 
         Collider2D colliderD = Physics2D.OverlapPoint(transform.position + new Vector3(cellSize,0,0));
         if (colliderD != null)
@@ -97,9 +104,21 @@ public class move : MonoBehaviour
             if(!risizngRelease){
                 risizngRelease = true;
             }
-            else if(cantMove_D || cantMove_M){
-                Debug.Log("Diagonalja ndryshoj: " );
-                    cellSize = 0f;
+            else if((cantMove_M || CantMoveOfOther_M)){
+                if(direction == -1){       
+                    Debug.Log(" ndryshoj: " );
+                        cellSize = 0f;
+                        gameObject.tag = "dead";
+                        //Destroy(gameObject);
+                    }
+                }
+            else if((cantMove_D || CantMoveOfOther_D)){
+                if(direction == 1){    
+                    Debug.Log("Diagonalja ndryshoj: " );
+                        cellSize = 0f;
+                        gameObject.tag = "dead";
+                        //Destroy(gameObject);
+                }
             }
         }
     }
