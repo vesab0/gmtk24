@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class resize : MonoBehaviour
+public class Resize : MonoBehaviour
 {
     public controller controller;
     public move move; 
@@ -64,7 +64,6 @@ public class resize : MonoBehaviour
 
     void Update()
     {   
-
         if(gameObject.CompareTag("Player")){
 
         if (Input.GetKey(KeyCode.Space))

@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenuu.unity
     guid: 04a8bf87188fc4a4fae8acbd41cba969
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -18,14 +18,56 @@ EditorBuildSettings:
     path: Assets/Scenes/Level11.unity
     guid: 46685385961db4f4baef3beec3588590
   - enabled: 1
+    path: Assets/Scenes/Level13.unity
+    guid: 9ff925b30121d624db597e1056a655b9
+  - enabled: 1
     path: Assets/Scenes/LevelWorld1.unity
     guid: 4023bce3035c29349bea78c91672ec00
   - enabled: 1
     path: Assets/Scenes/LevelWorld2.unity
     guid: 132068a559ec64c4dacab646cdb258ce
   - enabled: 1
+    path: Assets/Scenes/Level12.unity
+    guid: 337cecb61fd29e94d94c3beba3b45572
+  - enabled: 1
+    path: Assets/Scenes/Level15.unity
+    guid: a783ca4a7ce1bc44c8e0a995691ba138
+  - enabled: 1
+    path: Assets/Scenes/Level14.unity
+    guid: c53a90689df722743a6eb4c85c1d84c4
+  - enabled: 1
     path: Assets/Scenes/LevelWorld3.unity
     guid: c02a8892ebb7c0e4b991d92b15ddd36c
+  - enabled: 1
+    path: Assets/Scenes/Level22.unity
+    guid: 9f3f15bd03dcc554b9c1b05dcafa2259
+  - enabled: 1
+    path: Assets/Scenes/Level24.unity
+    guid: f59fdde5daab2a345a3b01c2262767dd
+  - enabled: 1
+    path: Assets/Scenes/Level32.unity
+    guid: 9281f904345897740b0e4b8187760f69
+  - enabled: 1
+    path: Assets/Scenes/Level25.unity
+    guid: 4f9d256e382035841b919c82de4815e3
+  - enabled: 1
+    path: Assets/Scenes/Level31.unity
+    guid: cad21d21afe32b7439fde93fabc85ce1
+  - enabled: 1
+    path: Assets/Scenes/Level33.unity
+    guid: 11f9435693ebc6f4489f03429bf111fa
+  - enabled: 1
+    path: Assets/Scenes/Level23.unity
+    guid: 20325fdd6e927254d8d9a46cab6f2942
+  - enabled: 1
+    path: Assets/Scenes/Level35.unity
+    guid: 377363dab16dcb840a6650d2613de245
+  - enabled: 1
+    path: Assets/Scenes/Level34.unity
+    guid: 8c8f362d574f9644a94560ed3aeeb237
+  - enabled: 1
+    path: Assets/Scenes/Level21.unity
+    guid: 1c08f3aec67bc154c928385f13690fd8
   - enabled: 0
     path: Assets/Scenes/LevelWorld4.unity
     guid: e9a8d8a4da3cf884db015e159e97219c
