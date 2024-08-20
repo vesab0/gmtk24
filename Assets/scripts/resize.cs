@@ -16,6 +16,9 @@ public class Resize : MonoBehaviour
     public GameObject outline;
     public static bool canResize = false;
     public butonpresed butonpresed;
+    public butonpresed butonpresed;
+    public butonpresed butonpresed;
+    public butonpresed butonpresed;
 
     private int myID = 0;
     private int lastPlaceDjatht=0;
@@ -64,6 +67,7 @@ public class Resize : MonoBehaviour
 
     void Update()
     {   
+        if(gameObject.CompareTag("Player")){
 
         if (Input.GetKey(KeyCode.Space))
         {
@@ -134,6 +138,7 @@ public class Resize : MonoBehaviour
 
                 }
             }
+        }
 
         }
     }

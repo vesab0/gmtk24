@@ -108,7 +108,8 @@ public class move : MonoBehaviour
                 if(direction == -1){       
                     Debug.Log(" ndryshoj: " );
                         cellSize = 0f;
-                        gameObject.tag = "dead";
+                        gameObject.tag = "platform";
+                        
                         //Destroy(gameObject);
                     }
                 }
@@ -116,7 +117,7 @@ public class move : MonoBehaviour
                 if(direction == 1){    
                     Debug.Log("Diagonalja ndryshoj: " );
                         cellSize = 0f;
-                        gameObject.tag = "dead";
+                        gameObject.tag = "platform";
                         //Destroy(gameObject);
                 }
             }
