@@ -16,7 +16,7 @@ public class move : MonoBehaviour
     public bool CantMoveOfOther_D;
     public bool CantMoveOfOther_M;
     private bool risizingActive;
-
+    private bool risizngRelease = false;
     
     void Update()
     {      
@@ -91,4 +91,17 @@ public class move : MonoBehaviour
         }
         else{cantMove_D = false;}  
     }
+
+    public void freezeobjects(){
+        if(!risizingActive){
+            if(!risizngRelease){
+                risizngRelease = true;
+            }
+            else if(cantMove_D || cantMove_M){
+                Debug.Log("Diagonalja ndryshoj: " );
+                    cellSize = 0f;
+            }
+        }
+    }
 }
+
