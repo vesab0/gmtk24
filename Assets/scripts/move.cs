@@ -21,6 +21,7 @@ public class move : MonoBehaviour
     
     void Update()
     {      
+        transform.rotation = Quaternion.identity;
         if (Input.GetKey(KeyCode.Space))
         {
             risizingActive = true;
@@ -121,6 +122,13 @@ public class move : MonoBehaviour
                         //Destroy(gameObject);
                 }
             }
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("EatEnemy"))
+        {
+            Destroy(this);
         }
     }
 }

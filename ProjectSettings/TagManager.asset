@@ -11,6 +11,9 @@ TagManager:
   - buttton
   - button
   - dead
+  - bPLATFORM
+  - EatEnemy
+  - Flamuri
   layers:
   - Default
   - TransparentFX

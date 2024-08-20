@@ -16,6 +16,11 @@ public class Resize : MonoBehaviour
     public GameObject outline;
     public static bool canResize = false;
     public butonpresed butonpresed;
+    public butonpresed butonpresed1;
+    
+    public butonpresed butonpresed2;
+    
+    public butonpresed butonpresed3;
 
     private int myID = 0;
     private int lastPlaceDjatht=0;
@@ -35,6 +40,9 @@ public class Resize : MonoBehaviour
         }
 
         butonpresed.isOnButton = false;
+        butonpresed1.isOnButton = false;
+        butonpresed2.isOnButton = false;
+        butonpresed3.isOnButton = false;
         if (controller.direction == 1)
         {
             myID = lastPlaceDjatht;
@@ -81,7 +89,7 @@ public class Resize : MonoBehaviour
             
         }
 
-        if (butonpresed.isOnButton && canResize)
+        if ((butonpresed.isOnButton||butonpresed1.isOnButton||butonpresed2.isOnButton||butonpresed3.isOnButton) && canResize)
         {       
             Vector3 myPosition = transform.position;
 
