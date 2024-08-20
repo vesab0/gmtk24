@@ -68,7 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f67845896864a4aba1b05b2f9e0724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sensor: {fileID: 1908607440647331367}
+  animator: {fileID: 7946170079068473943}
+  triggeringTag: Player
 --- !u!212 &5416371185618214821
 SpriteRenderer:
   m_ObjectHideFlags: 0

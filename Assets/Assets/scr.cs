@@ -15,11 +15,11 @@ public class scr : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Trigger Entered");
+        Debug.Log("Trigger Entered");
 
         if (collision.tag == "Player") ;
         {
-            print("Switching to Scene" + sceneBuildIndex);
+            Debug.Log("Switching to Scene" + sceneBuildIndex);
             SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
         }
 

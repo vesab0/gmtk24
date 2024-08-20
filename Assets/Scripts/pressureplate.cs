@@ -2,37 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pressureplate : MonoBehaviour
+public class PressurePlate : MonoBehaviour
 {
-    public BoxCollider2D Sensor;
+    public Animator animator; // Reference to the Animator component
+    public string triggeringTag = "Player"; // The tag of the object that can trigger the pressure plate
 
-    Animator anim;
+    private bool isActivated = false;
 
-    
-        
-        // Update is called once per frame
-    void Update()
+    void Start()
     {
-        anim = GetComponent<Animator>();
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>(); // Automatically find Animator on the same GameObject
+        }
     }
 
+    // This method is called when another collider enters the trigger collider attached to the pressure plate
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(Sensor)
+        if (other.CompareTag(triggeringTag) && !isActivated)
         {
-            anim.SetInteger("State", 1);
+            // Activate the pressure plate and trigger the animation
+            isActivated = true;
+            animator.SetBool("IsPressed", true);
         }
-
     }
 
+    // Optional: Reset the pressure plate when the player leaves
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (Sensor)
+        if (other.CompareTag(triggeringTag) && isActivated)
         {
-            anim.SetInteger("State", 0);
+            // Deactivate the pressure plate and reset the animation
+            isActivated = false;
+            animator.SetBool("IsPressed", false);
         }
-
     }
 }
-
+    
 
